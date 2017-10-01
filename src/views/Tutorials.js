@@ -38,10 +38,13 @@ class Tutorials extends Component {
 
 const ALL_RESOURCES_QUERY = gql`
   query AllResourcesQuery {
-    allResources(filter: {
-      isPublished: true,
-      category: TUTORIAL
-    }) {
+    allResources(
+      filter: {
+        isPublished: true,
+        category: TUTORIAL
+      }
+      orderBy: createdAt_DESC
+    ) {
       id
       title
       description

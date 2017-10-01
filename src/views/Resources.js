@@ -38,7 +38,10 @@ class Resources extends Component {
 
 const ALL_RESOURCES_QUERY = gql`
   query AllResourcesQuery {
-    allResources(filter: {isPublished: true}) {
+    allResources(
+      filter: {isPublished: true}
+      orderBy: createdAt_DESC
+      ) {
       id
       title
       description

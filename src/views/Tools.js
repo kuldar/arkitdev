@@ -28,7 +28,7 @@ class Tools extends Component {
 
     return (
       <div className='wrapper'>
-        <Hero resource='tools' emoji='🛠' />
+        <Hero resource='tools' emoji='🔨' />
         { resourcesListComponent() }
       </div>
     )
@@ -38,10 +38,13 @@ class Tools extends Component {
 
 const ALL_RESOURCES_QUERY = gql`
   query AllResourcesQuery {
-    allResources(filter: {
-      isPublished: true,
-      category: TOOL
-    }) {
+    allResources(
+      filter: {
+        isPublished: true,
+        category: TOOL
+      }
+      orderBy: createdAt_DESC
+    ) {
       id
       title
       description
