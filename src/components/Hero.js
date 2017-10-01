@@ -37,7 +37,6 @@ class Hero extends Component {
     })
 
     Cookie.set('arkitdevSubscription', true)
-    gaq.push(['_trackEvent', 'Newsletter', 'Suscribe to Newsletter', 'Newsletter Form', 0, false]);
   }
 
   render() {
