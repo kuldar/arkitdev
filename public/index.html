@@ -14,9 +14,42 @@
     <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
     <link rel='shortcut icon' href='%PUBLIC_URL%/favicon.ico'>
     <title>ARKit Dev | Tutorials, articles, news &amp; tools</title>
-    <meta name="description" content='All your freshest ARKit development resources.'>
+    <meta name='description' content='All your freshest ARKit development resources.'>
+
+    <meta property='og:title' content='ARKit Dev | Tutorials, articles, news &amp; tools' />
+    <meta property='og:site_name' content='ARKit Dev' />
+    <meta property='og:url' content='https://arkitdev.co' />
+    <meta property='og:description' content='All your freshest ARKit development resources.' />
+    <meta property='og:image' content='https://arkitdev.co/images/og.png' />
+    <meta property='og:image:width' content='1200' />
+    <meta property='og:image:height' content='630' />
+
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css' />
     <link rel='stylesheet' href='/stylesPrefixed.css'>
+    <!-- Start of Async Drift Code -->
+    <script>
+    !function() {
+      var t;
+      if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
+      t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
+      t.factory = function(e) {
+        return function() {
+          var n;
+          return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+        };
+      }, t.methods.forEach(function(e) {
+        t[e] = t.factory(e);
+      }), t.load = function(t) {
+        var e, n, o, i;
+        e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
+        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js",
+        n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+      });
+    }();
+    drift.SNIPPET_VERSION = '0.3.1';
+    drift.load('64vmr6eahx8a');
+    </script>
+    <!-- End of Async Drift Code -->
   </head>
   <body>
     <div id='root'></div>
