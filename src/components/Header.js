@@ -21,7 +21,7 @@ class Header extends Component {
               <Link to='/tools' className={ pathName === '/tools' ? 'headerNavLink isActive' : 'headerNavLink' }>Tools</Link>
               <a className='headerNavTwitter' href='https://twitter.com/arkitdevco'>
                 <img className='headerNavTwitterIcon' src='/images/twitterIcon.svg' />
-                <div className='headerNavTwitterText'>Follow <strong>@ARKitDev</strong></div>
+                <div className='headerNavTwitterText'>Follow <strong>@ARKitDevco</strong></div>
               </a>
             </nav>
           </div>
