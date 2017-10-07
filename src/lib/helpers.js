@@ -54,7 +54,16 @@ export const EmptyMessage = () => {
 export const categoryName = (category) => {
   if (category === 'TUTORIAL') return 'Tutorial'
   if (category === 'ARTICLE') return 'Article'
+  if (category === 'PROJECT') return 'Project'
   if (category === 'TOOL') return 'Tool'
+}
+
+// Generate category url
+export const categoryUrl = (category) => {
+  if (category === 'TUTORIAL') return '/tutorials'
+  if (category === 'ARTICLE') return '/articles'
+  if (category === 'PROJECT') return '/projects'
+  if (category === 'TOOL') return '/tools'
 }
 
 export const getRandomInt = (min, max) => {

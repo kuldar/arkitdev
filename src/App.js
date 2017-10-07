@@ -11,6 +11,7 @@ import Resources from './views/Resources'
 import NewResource from './views/NewResource'
 import Tutorials from './views/Tutorials'
 import Articles from './views/Articles'
+import Projects from './views/Projects'
 import Tools from './views/Tools'
 
 // App
@@ -24,6 +25,7 @@ class App extends Component {
           <Route exact path='/new' component={NewResource} />
           <Route exact path='/tutorials' component={Tutorials} />
           <Route exact path='/articles' component={Articles} />
+          <Route exact path='/projects' component={Projects} />
           <Route exact path='/tools' component={Tools} />
         </Switch>
         <Footer />

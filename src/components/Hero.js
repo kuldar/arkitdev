@@ -22,12 +22,11 @@ class Hero extends Component {
     // Get values from state
     let { email } = this.state
 
-    // Create the resource
-    let response = await this.props.createSubscriberMutation({
+    // Create the subscription
+    let response = await this.props.subscribeToNewsletterMutation({
       variables: { email }
     })
 
-    // console.log(response.data.createSubscriber.email)
     console.log(response)
 
     // Do the thing
@@ -72,10 +71,10 @@ class Hero extends Component {
   }
 }
 
-const CREATE_SUBSCRIBER_MUTATION = gql`
-  mutation CreateSubscriberMutation($email: String!) {
-    createSubscriber(email: $email) { email }
+const SUBSCRIBE_TO_NEWSLETTER_MUTATION = gql`
+  mutation SubscribeToNewsletterMutation($email: String!) {
+    subscribeToNewsletter(email: $email) { email }
   }
 `
 
-export default graphql(CREATE_SUBSCRIBER_MUTATION, { name: 'createSubscriberMutation' }) (Hero)
+export default graphql(SUBSCRIBE_TO_NEWSLETTER_MUTATION, { name: 'subscribeToNewsletterMutation' }) (Hero)

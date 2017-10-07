@@ -1,5 +1,5 @@
 # project: arkitdev
-# version: 22
+# version: 31
 
 type Resource implements Node {
   title: String!
@@ -50,4 +50,9 @@ enum ResourceCategory {
   TUTORIAL
   ARTICLE
   TOOL
+}
+
+type Subscriber implements Node {
+  email: String!
+  id: ID! @isUnique
 }

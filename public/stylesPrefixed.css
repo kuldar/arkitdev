@@ -24,7 +24,7 @@ a:active {
 
 .wrapper {
   max-width: 62rem;
-  min-width: 40rem;
+  min-width: 55rem;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -186,6 +186,10 @@ a:active {
   color: #7995A3;
 }
 
+.heroFormEmail::-ms-input-placeholder {
+  color: #7995A3;
+}
+
 .heroFormEmail::placeholder {
   color: #7995A3;
 }
@@ -249,6 +253,9 @@ a:active {
 
 .resourceListItemContent {
   padding: 1.5rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .resourceListItemTitle {
@@ -257,11 +264,15 @@ a:active {
   margin: 0 0 0.5rem 0;
 }
 
-.resourceListItemTitle > span {
-  margin-right: 0.5rem;
-}
+/* .resourceListItemTitle > span {
+
+} */
 
 .resourceListItemCategory {
+  margin-left: 0.5rem;
+  -webkit-transition: 0.15s;
+  -o-transition: 0.15s;
+  transition: 0.15s;
   position: relative;
   top: -2px;
   background-color: #2F5365;
@@ -271,6 +282,11 @@ a:active {
   padding: 0.25rem 0.325rem;
   line-height: 0.875rem;
   display: inline-block;
+  font-weight: bold;
+}
+
+.resourceListItemCategory:hover {
+  background-color: #4B6E80;
 }
 
 .resourceListItemDescription {

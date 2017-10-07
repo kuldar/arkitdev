@@ -81,6 +81,7 @@ class NewResource extends Component {
           <select className='newResourceFormSelectElement' onChange={(e) => this.setState({ category: e.target.value })}>
             <option value='TUTORIAL'>Tutorial</option>
             <option value='ARTICLE'>Article</option>
+            <option value='PROJECT'>Project</option>
             <option value='TOOL'>Tool</option>
           </select>
         </div>
@@ -113,7 +114,6 @@ class NewResource extends Component {
 
         { this.state.title &&
           this.state.description &&
-          this.state.websiteUrl &&
           this.state.imageUrl &&
           <div className='newResourceFormButton' onClick={this.handleCreateResource}>Add a new resource</div> }
 
